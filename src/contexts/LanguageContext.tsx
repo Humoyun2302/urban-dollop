@@ -248,7 +248,6 @@ const translations: Record<Language, any> = {
       password: "Parol",
       confirmPassword: "Parolni tasdiqlang",
       rememberMe: "Meni eslab qol",
-      forgotPassword: "Parolni unutdingizmi?",
       loginButton: "Kirish",
       signUpButton: "Ro'yxatdan o'tish",
       dontHaveAccount: "Hisobingiz yo'qmi?",
@@ -300,7 +299,7 @@ const translations: Record<Language, any> = {
       otpResendFailed: "Kodni qayta yuborishda xatolik",
       codeSent: "Tasdiqlash kodi yuborildi",
       loginRequired: "Sevimlilar qo'shish uchun tizimga kiring",
-      password: "Parol",
+      // Auth / password reset
       forgotPassword: "Parolni unutdingizmi?",
       resetPassword: "Parolni tiklash",
       sendCode: "Kod yuborish",
@@ -937,7 +936,9 @@ const translations: Record<Language, any> = {
       timeHHMM: "Vaqt (SS:DD)",
       slotAlreadyBooked: "Bu vaqt allaqachon band. Mavjud bandlikni boshqarish uchun uni oching.",
     },
-    months: {
+    // Legacy month labels (array form) - kept for backward compatibility
+    // Moved to avoid duplicate key with structured `months` above.
+    legacyMonths: {
       short: [
         "Yan",
         "Fev",
@@ -1181,7 +1182,6 @@ const translations: Record<Language, any> = {
       password: "Пароль",
       confirmPassword: "Подтвердите пароль",
       rememberMe: "Запомнить меня",
-      forgotPassword: "Забыли пароль?",
       loginButton: "Войти",
       signUpButton: "Зарегистрироваться",
       dontHaveAccount: "Нет аккаунта?",
@@ -1230,7 +1230,7 @@ const translations: Record<Language, any> = {
       otpResendFailed: "Не удалось отправить код",
       codeSent: "Код подтверждения отправлен",
       loginRequired: "Войдите, чтобы добавить в избранное",
-      password: "Пароль",
+      // Auth / password reset
       forgotPassword: "Забыли пароль?",
       resetPassword: "Восстановление пароля",
       sendCode: "Отправить код",
@@ -1858,7 +1858,9 @@ const translations: Record<Language, any> = {
       timeHHMM: "Время (ЧЧ:ММ)",
       slotAlreadyBooked: "Это время уже забронировано. Откройте существующее бронирование для управления им.",
     },
-    months: {
+    // Legacy month labels (array form) - kept for backward compatibility
+    // Moved to avoid duplicate key with structured `months` above.
+    legacyMonths: {
       short: [
         "Янв",
         "Фев",
@@ -2106,7 +2108,6 @@ const translations: Record<Language, any> = {
       password: "Password",
       confirmPassword: "Confirm Password",
       rememberMe: "Remember me",
-      forgotPassword: "Forgot Password?",
       loginButton: "Login",
       signUpButton: "Sign Up",
       dontHaveAccount: "Don't have an account?",
@@ -2156,7 +2157,7 @@ const translations: Record<Language, any> = {
       otpResendFailed: "Failed to resend code",
       codeSent: "Verification code sent",
       loginRequired: "Please login to add favorites",
-      password: "Password",
+      // Auth / password reset
       forgotPassword: "Forgot password?",
       resetPassword: "Reset Password",
       sendCode: "Send code",
